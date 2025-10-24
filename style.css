@@ -43,10 +43,25 @@ nav a:hover {
   color: #0077cc;
 }
 
+/* Desktop / tablet layout (default) */
+
 .intro {
   display: flex;
   align-items: flex-start;
   gap: 20px;
+}
+
+/* Mobile layout (below 768px width) */
+@media (max-width: 768px) {
+  .intro {
+    flex-direction: column;   /* stack vertically */
+    align-items: center;      /* center content */
+    text-align: center;       /* optional: center text */
+  }
+  
+  .intro .about {
+    margin-top: 16px;         /* add space under the photo */
+  }
 }
 
 
