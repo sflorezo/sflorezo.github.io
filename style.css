@@ -209,10 +209,10 @@ a:active {
 
 .research-page .note-list {
   margin-top: 0px;            /* small gap from text above */
-  margin-left: 0.1em;         /* small indent */
+  margin-left: -2.5em;         /* small indent */
   font-size: 0.8em;           /* smaller than body text */
   color: #8b8a8a;                /* soft gray tone */
-  list-style-type: "-";      /* use short dash as bullet (cleaner than •) */
+  list-style-type: "";      /* use short dash as bullet (cleaner than •) */
   line-height: 1;
 }
 
