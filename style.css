@@ -1,4 +1,10 @@
+:root {
+  --reference-blue: rgb(0,115,153);
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Crimson+Text:wght@400;600&display=swap');
+
+/* ====== Base styles (applied to all pages) ====== */
 
 body {
   font-family: 'Inter', sans-serif;
@@ -64,4 +70,143 @@ footer {
   margin-top: 40px;
   font-size: 0.9em;
   color: #777;
+}
+
+/* ====== Link styles ====== */
+
+/* unvisited link */
+a:link {
+  color: var(--reference-blue);       
+  text-decoration: none;
+}
+
+/* visited link */
+a:visited {
+  color: var(--reference-blue);       
+}
+
+/* mouse over link */
+a:hover {
+  color: rgb(7, 16, 76);       
+  text-decoration: underline;
+}
+
+/* selected link (while clicking) */
+a:active {
+  color: rgb(7, 16, 76);        
+}
+
+/* =====================================
+   RESEARCH PAGE OVERRIDES
+   ===================================== */
+
+.research-page p {
+  text-align: justify;
+}
+
+.research-page .container {
+  max-width: 1300px;          /* wider layout */
+  margin: 10px auto;
+  padding: 0 0px;
+}
+
+/* Page title */
+.research-page h1 {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+/* Section titles (Working Papers, etc.) */
+.research-page h2 {
+  font-family: 'Crimson Text', serif;
+  font-size: 1.6em;
+  text-align: left;
+  color: rgb(7, 16, 76);
+  margin-top: 3px;
+  margin-bottom: 3px;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 0.25em;
+  display: block;
+}
+
+/* Paper blocks */
+.research-page .paper {
+  margin-bottom: 30px;
+  padding-bottom: 15px;
+  border-bottom: none;
+}
+
+/* Paper titles */
+.research-page .paper h3 {
+  font-family: 'Crimson Text', serif;
+  font-size: 1.5em;
+  margin-bottom: 5px;
+}
+
+.research-page .note {
+  color: #8b8a8a;              /* soft gray text */
+  font-size: 0.6em;         /* slightly smaller */
+  margin-top: 4px;          /* a bit of space from the paragraph above */
+}
+
+.research-page .coauthors {
+  font-size: 0.9em;
+  color: #555;
+  font-weight: 400;
+  margin-left: 8px;
+}
+
+.research-page .note-list {
+  margin-top: 0px;            /* small gap from text above */
+  margin-left: 0.2em;         /* small indent */
+  font-size: 0.9em;           /* smaller than body text */
+  color: #8b8a8a;                /* soft gray tone */
+  list-style-type: "-";      /* use short dash as bullet (cleaner than •) */
+  line-height: 1;
+}
+
+/* Paper title links */
+.research-page .paper h3 a {
+  color: var(--reference-blue);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.research-page .paper h3 a:hover {
+  color: rgb(7, 16, 76);
+  text-decoration: underline;
+}
+
+/* Paper metadata and text */
+.research-page .paper p {
+  margin: 3px 0;
+  font-size: 1.05em;
+  line-height: 1.6;
+}
+
+.research-page .paper em {
+  color: #555;
+}
+
+/* Work in progress list */
+.research-page ul {
+  margin-left: 1.3em;
+  font-size: 1.05em;
+  line-height: 1.6;
+}
+
+.research-page ul li {
+  margin-bottom: 8px;
+}
+
+/* Footer */
+.research-page footer {
+  margin-top: 60px;
+  font-size: 0.9em;
+  text-align: center;
+  color: #777;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
