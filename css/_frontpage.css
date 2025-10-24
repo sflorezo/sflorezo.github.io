@@ -1,0 +1,114 @@
+/* =====================================
+   FRONT PAGE STYLES (index.html)
+   ===================================== */
+
+/* General container */
+.front-page .container {
+  width: 90%;
+  max-width: 900px;
+  margin: 50px auto;
+  padding: 0 20px;
+}
+
+/* Header and nav */
+.front-page header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.front-page h1 {
+  font-family: 'Crimson Text', serif;
+  font-size: 2.2em;
+  margin-bottom: 10px;
+}
+
+.front-page nav a {
+  text-decoration: none;
+  color: var(--reference-blue);
+  margin: 0 10px;
+  font-weight: 500;
+}
+
+.front-page nav a:hover {
+  color: #0077cc;
+}
+
+/* =====================================
+   Intro layout (photo + about text)
+   ===================================== */
+
+.front-page .intro {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.front-page .about {
+  flex: 1;
+  min-width: 250px;
+  font-size: 1.05em;
+  line-height: 1.6;
+}
+
+/* Mobile layout (below 768px width) */
+@media (max-width: 768px) {
+  .front-page .intro {
+    flex-direction: column;   /* stack vertically */
+    align-items: center;
+    text-align: center;
+  }
+
+  .front-page .intro .about {
+    margin-top: 16px;
+  }
+}
+
+/* =====================================
+   Photo block and contact links
+   ===================================== */
+   
+.front-page .photo-block {
+  display: flex;
+  flex-direction: column;   /* stack image + links vertically */
+  align-items: center;
+  position: relative;
+}
+
+.front-page .profile-pic {
+  width: 200px;             /* restore correct scale */
+  border-radius: 50%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  display: block;
+}
+
+.front-page .contact-links {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 0.9em;
+  color: #777;
+  width: 180px;
+  max-width: 100%;
+}
+
+.front-page .contact-links a {
+  color: var(--reference-blue);
+  text-decoration: none;
+}
+
+.front-page .contact-links a:hover {
+  color: var(--reference-blue);
+  text-decoration: underline;
+}
+
+.front-page .email-line {
+  white-space: nowrap;
+}
+
+/* Footer */
+.front-page footer {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 0.9em;
+  color: #777;
+}

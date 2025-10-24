@@ -1,0 +1,115 @@
+/* =====================================
+   GENERIC CONTENT PAGE BASE
+   (shared by Research, Media, etc.)
+   ===================================== */
+
+/* General container */
+.content-page .container {
+  width: 90%;
+  max-width: 1400px;          /* wider layout than front page */
+  margin: 10px auto;
+  padding: 0 12px;
+}
+
+/* Paragraph formatting */
+.content-page p {
+  text-align: justify;
+  margin: 3px 0;
+  font-size: 0.95em;
+  line-height: 1.6;
+  color: #222;
+}
+
+/* Page title (h1) */
+.content-page h1 {
+  text-align: center;
+  margin-bottom: 15px;
+  font-family: 'Crimson Text', serif;
+  font-size: 2em;
+  font-weight: 600;
+  color: rgb(7, 16, 76);
+}
+
+/* ---- Centered navigation ---- */
+.content-page header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* Keep nav centered under title */
+.content-page nav {
+  display: inline-block;
+  margin-top: 6px;
+}
+
+/* Link style — consistent across all pages */
+.content-page nav a {
+  text-decoration: none;
+  color: var(--reference-blue);
+  margin: 0 12px;
+  font-size: 1em;
+  font-weight: 500;
+  letter-spacing: 0.3px;
+  transition: color 0.2s ease;
+}
+
+.content-page nav a:hover {
+  color: rgb(7, 16, 76);
+  text-decoration: underline;
+}
+
+/* Section titles (h2: Working Papers, In the Media, etc.) */
+.content-page h2 {
+  font-family: 'Crimson Text', serif;
+  font-size: 1.6em;
+  text-align: left;
+  color: rgb(7, 16, 76);
+  margin-top: 3px;
+  margin-bottom: 3px;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 0.25em;
+  display: block;
+}
+
+/* Subtitles (h3) — shared look for paper titles or media items */
+.content-page h3 {
+  font-family: 'Crimson Text', serif;
+  font-size: 1.3em;
+  margin-bottom: 5px;
+  color: var(--reference-blue);
+  font-weight: 500;
+}
+
+/* Links inside content */
+.content-page a {
+  color: var(--reference-blue);
+  text-decoration: none;
+}
+
+.content-page a:hover {
+  color: rgb(7, 16, 76);
+  text-decoration: underline;
+}
+
+/* Lists */
+.content-page ul {
+  margin-left: 1.3em;
+  font-size: 1.05em;
+  line-height: 1.6;
+}
+
+.content-page ul li {
+  margin-bottom: 8px;
+}
+
+/* Footer */
+.content-page footer {
+  margin-top: 60px;
+  font-size: 0.9em;
+  text-align: center;
+  color: #777;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

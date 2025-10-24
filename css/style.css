@@ -1,0 +1,82 @@
+/* =====================================
+   GLOBAL VARIABLES & FONT IMPORTS
+   ===================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Crimson+Text:wght@400;600&display=swap');
+
+/* =====================================
+   IMPORT PAGE-SPECIFIC PARTIALS
+   ===================================== */
+
+/* Front page (index.html) */
+@import url('_frontpage.css');
+
+/* Shared layout for research / media pages */
+@import url('_contentpage.css');
+
+/* Research page styles */
+@import url('_research.css');
+
+/* Media page styles */
+@import url('_media.css');
+
+:root {
+  --reference-blue: rgb(0,115,153);
+}
+
+
+
+
+
+
+/* =====================================
+   GLOBAL BASE STYLES
+   (apply to all pages)
+   ===================================== */
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: #fafafa;
+  color: #222;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3 {
+  margin-top: 0;
+}
+
+/* Links */
+a:link {
+  color: var(--reference-blue);
+  text-decoration: none;
+}
+
+a:visited {
+  color: var(--reference-blue);
+}
+
+a:hover {
+  color: rgb(7, 16, 76);
+  text-decoration: underline;
+}
+
+a:active {
+  color: rgb(7, 16, 76);
+}
+
+/* Optional: shared container (used if not overridden) */
+.container {
+  width: 90%;
+  max-width: 900px;
+  margin: 50px auto;
+  padding: 0 20px;
+}
+
+/* Footer (fallback for pages that don't define their own) */
+footer {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 0.9em;
+  color: #777;
+}

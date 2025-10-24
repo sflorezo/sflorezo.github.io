@@ -1,0 +1,69 @@
+/* =====================================
+   RESEARCH PAGE STYLES
+   (extends .content-page)
+   ===================================== */
+
+.research-page .paper {
+  margin-bottom: 30px;
+  padding-bottom: 15px;
+  border-bottom: none;
+}
+
+/* Paper title (h3) */
+.research-page .paper h3 {
+  font-family: 'Crimson Text', serif;
+  font-size: 1.5em;
+  margin-bottom: 5px;
+  font-weight: 500;
+}
+
+.research-page .paper h3 a {
+  color: var(--reference-blue);
+  text-decoration: none;
+  font-weight: 400;
+}
+
+.research-page .paper h3 a:hover {
+  color: rgb(7, 16, 76);
+  text-decoration: underline;
+}
+
+/* Coauthors line */
+.research-page .coauthors {
+  font-size: 0.9em;
+  color: #555;
+  font-weight: 400;
+  margin-left: 8px;
+}
+
+/* Paper description text */
+.research-page .paper p {
+  margin: 3px 0;
+  font-size: 0.9em;
+  line-height: 1.6;
+}
+
+.research-page .paper em {
+  color: #555;
+}
+
+/* Notes list under each paper (e.g., “Under review”, “New draft soon”) */
+.research-page .note-list {
+  margin-top: 0px;
+  margin-left: -2.5em;   /* subtle indent */
+  font-size: 0.8em;
+  color: #8b8a8a;
+  list-style-type: none;  /* removes bullets */
+  line-height: 1.2;
+}
+
+/* Optional: Working papers / WIP lists (used for unordered lists) */
+.research-page ul {
+  margin-left: 1.3em;
+  font-size: 1.05em;
+  line-height: 1.6;
+}
+
+.research-page ul li {
+  margin-bottom: 8px;
+}
