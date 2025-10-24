@@ -44,18 +44,56 @@ nav a:hover {
 
 .intro {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  align-items: flex-start;
   gap: 20px;
 }
 
+
+.photo-block {
+  display: flex;
+  flex-direction: column;   /* stack image + links vertically */
+  align-items: center;      /* center them horizontally */
+  position: relative;
+}
+
+
 .profile-pic {
-  width: 180px;
-  height: 180px;
+  width: 200px;  /* or your preferred size */
   border-radius: 50%;
-  object-fit: cover;
-  box-shadow: 0 0 5px rgba(0,0,0,0.2);
+  aspect-ratio: 1 / 1;       /* ensures width = height */
+  border-radius: 50%;        /* makes it circular */
+  object-fit: cover;         /* crops nicely */
+  display: block;
+}
+
+.contact-links {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 0.9em;
+  color: #777;
+  width: 180px;            /* <-- match photo width */
+  max-width: 100%;
+}
+
+.contact-links div,
+.contact-links p {
+  margin: 2px 0;
+}
+
+.contact-links a {
+  text-align: left;
+  color: #777;
+  text-decoration: none;
+  margin: 0 4px;
+}
+
+.contact-links a:hover {
+  color: var(--reference-blue);
+  text-decoration: underline;
+}
+
+.email-line {
+  white-space: nowrap; /* prevents line breaks between Email: and the address */
 }
 
 .about {
