@@ -143,10 +143,12 @@ a:active {
 }
 
 .research-page .container {
-  max-width: 1300px;          /* wider layout */
+  max-width: 1400px;          /* wider layout */
   margin: 10px auto;
-  padding: 0 0px;
+  padding: 0 12px;
 }
+
+/* Responsive adjustment for small screens */
 
 /* Page title */
 .research-page h1 {
@@ -181,12 +183,6 @@ a:active {
   margin-bottom: 5px;
 }
 
-.research-page .note {
-  color: #8b8a8a;              /* soft gray text */
-  font-size: 0.6em;         /* slightly smaller */
-  margin-top: 4px;          /* a bit of space from the paragraph above */
-}
-
 .research-page .coauthors {
   font-size: 0.9em;
   color: #555;
@@ -196,8 +192,8 @@ a:active {
 
 .research-page .note-list {
   margin-top: 0px;            /* small gap from text above */
-  margin-left: 0.2em;         /* small indent */
-  font-size: 0.9em;           /* smaller than body text */
+  margin-left: 0.1em;         /* small indent */
+  font-size: 0.8em;           /* smaller than body text */
   color: #8b8a8a;                /* soft gray tone */
   list-style-type: "-";      /* use short dash as bullet (cleaner than •) */
   line-height: 1;
@@ -207,7 +203,7 @@ a:active {
 .research-page .paper h3 a {
   color: var(--reference-blue);
   text-decoration: none;
-  font-weight: 600;
+  font-weight: 400;
 }
 
 .research-page .paper h3 a:hover {
@@ -218,7 +214,7 @@ a:active {
 /* Paper metadata and text */
 .research-page .paper p {
   margin: 3px 0;
-  font-size: 1.05em;
+  font-size: 0.9em;
   line-height: 1.6;
 }
 
