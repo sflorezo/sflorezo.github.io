@@ -7,7 +7,6 @@
 .media-page .media-item {
   margin-bottom: 30px;
   padding-bottom: 20px;
-  border-bottom: 1px solid #eee;
   display: flex;
   flex-wrap: wrap;
   align-items: flex-start;
