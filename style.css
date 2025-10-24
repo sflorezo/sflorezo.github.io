@@ -15,6 +15,7 @@ body {
 }
 
 .container {
+  width: 90%;
   max-width: 900px;
   margin: 50px auto;
   padding: 0 20px;
@@ -143,6 +144,7 @@ a:active {
 }
 
 .research-page .container {
+  width: 95%;
   max-width: 1400px;          /* wider layout */
   margin: 10px auto;
   padding: 0 12px;
