@@ -63,6 +63,23 @@
   }
 }
 
+.subtle-quote {
+  margin: 1rem 0 0 0;
+  padding-left: 0.8rem;
+  border-left: 2px solid #ccc;
+  color: #777;
+  font-size: 0.82rem;
+  line-height: 1.5;
+}
+
+.subtle-quote cite {
+  display: block;
+  margin-top: 0.3rem;
+  font-style: normal;
+  font-size: 0.75rem;
+  color: #999;
+}
+
 /* =====================================
    Photo block and contact links
    ===================================== */
